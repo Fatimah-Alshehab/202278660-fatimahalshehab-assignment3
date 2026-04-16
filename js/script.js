@@ -94,7 +94,7 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
   }
-});
+
 
   // ---------------------------
   // Project filter
@@ -188,6 +188,9 @@ if (greeting) {
   greeting.textContent = message;
 }
 
+// ---------------------------
+// GitHub API Projects
+// ---------------------------
 async function loadGitHubRepos() {
   const container = document.getElementById("github-projects");
 
@@ -220,6 +223,9 @@ async function loadGitHubRepos() {
 }
 loadGitHubRepos();
 
+// ---------------------------
+// Visitor Timer
+// ---------------------------
 let seconds = 0;
 
 setInterval(() => {
@@ -230,3 +236,6 @@ setInterval(() => {
     timer.textContent = `⏱ You’ve been here for ${seconds}s`;
   }
 }, 1000);
+
+});
+

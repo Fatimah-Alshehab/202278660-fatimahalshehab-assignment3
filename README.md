@@ -1,73 +1,116 @@
-# Personal Portfolio Website
+# 🌐 Portfolio Website – Assignment 3
 
-## Project Description
+## 📌 Overview
 
-This project is a personal portfolio website created for the SWE363 course and enhanced in Assignment 2 with interactive and dynamic features.  
-The website presents my background, technical skills, and academic projects in a clean and responsive layout.
+This project is a personal portfolio website developed for **Assignment 3 – Advanced Functionality**.
+It extends previous assignments by adding dynamic features, API integration, and enhanced user interaction.
 
----
-
-## 🧩 Assignment 1 Features
-
-- About Me section  
-- Projects section  
-- Technical Skills section  
-- Contact form  
-- Dark/Light mode toggle  
-- Adjustable font size feature  
-- Scroll animations  
+The website presents my projects, technical skills, and contact information in a clean, responsive, and user-friendly interface.
 
 ---
 
-## 🚀 Assignment 2 Enhancements
+## 🌍 Live Demo
 
-This version improves the original website by adding interactivity and dynamic behavior.
-
-### 🔹 Dynamic Features
-- Project filtering system (All / C# / Java / Design)
-- Time-based greeting message
-
-### 🔹 User Feedback
-- Contact form validation (empty fields + email format)
-- Success and error messages
-
-### 🔹 UI Improvements
-- Hover animations for project cards
-- Hover animations for skill cards
-- Enhanced user experience
-
+👉 [View Portfolio](https://fatimah-alshehab.github.io/202278660-fatimahalshehab-assignment3/)
 
 ---
+
+## 🚀 Features
+
+### 🎨 User Interface
+
+* Responsive design for different screen sizes
+* Light/Dark mode toggle with saved preference (localStorage)
+* Smooth scrolling and section reveal animations
+
+### 🧠 Advanced Functionality
+
+* Project filtering by category
+* Visitor timer displaying time spent on the site
+* Dynamic greeting based on time of day
+
+### 🔗 API Integration
+
+* Integrated **GitHub API** to dynamically fetch repositories
+* Displays repository name, description, and link
+* Includes error handling for failed API requests
+
+### 📩 Form Validation
+
+* Ensures all fields are filled
+* Validates email format using regex
+* Displays user-friendly success and error messages
+
+### ⚙️ Performance Optimization
+
+* Lazy loading for images
+* Optimized CSS and JavaScript
+* Efficient DOM updates and event handling
+
+---
+
 ## 🛠️ Technologies Used
 
-- HTML5  
-- CSS3  
-- JavaScript (Vanilla JS)  
+* HTML5
+* CSS3
+* JavaScript (ES6)
+* Git & GitHub
 
+---
 
-## How to Run the Project Locally
+## ▶️ How to Run Locally
 
 1. Clone the repository:
-git clone https://github.com/Fatimah-Alshehab/202278660-Fatimah-Alshehab-assignment2.git
 
-2. Open the project folder.
+```bash
+git clone https://github.com/Fatimah-Alshehab/202278660-fatimahalshehab-assignment3.git
+```
 
-3. Open `index.html` in your browser.
+2. Open the project folder:
 
-No additional setup or installation is required.
+```bash
+cd 202278660-fatimahalshehab-assignment3
+```
 
----
-
-## AI Usage Summary
-
-AI tools were used to assist in implementing dynamic features (such as project filtering and greeting), improving form validation, refining CSS styling, and debugging JavaScript code.
-
-All AI-generated suggestions were reviewed and modified to ensure correctness and understanding.
-
-A detailed explanation is provided in `docs/ai-usage-report.md`.
+3. Open `index.html` in your browser
 
 ---
 
-## Live Deployment
+## 🤖 AI Usage Summary
 
-Live link: https://fatimah-alshehab.github.io/202278660-Fatimah-Alshehab-assignment2/
+AI tools such as ChatGPT were used to assist with:
+
+* Debugging and improving JavaScript logic
+* Implementing API integration
+* Enhancing UI/UX design
+* Writing documentation
+
+Detailed information is provided in:
+
+```
+docs/ai-usage-report.md
+```
+
+---
+
+## 📄 Additional Documentation
+
+* Technical documentation:
+
+```
+docs/technical-documentation.md
+```
+
+---
+
+## 👩‍💻 Author
+
+**Fatimah Alshehab**
+Software Engineering Student @ KFUPM
+
+---
+
+## 📌 Notes
+
+* This project focuses on functionality, clarity, and clean structure
+* All features were implemented with attention to performance and usability

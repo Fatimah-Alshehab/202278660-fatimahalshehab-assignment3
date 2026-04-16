@@ -261,6 +261,7 @@ body {
 .timer-box {
   margin-top: 20px;
   text-align: center;
+  margin-bottom: 20px;
 }
 
 #timer {
@@ -391,15 +392,6 @@ body {
   transition: 0.3s;
 }
 
-#github-projects {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 25px;
-  margin-top: 30px;
-
-  width: 100%;
-  justify-content: center;   /* centers grid */
-}
 
 #github {
   max-width: 900px;
@@ -760,4 +752,10 @@ body.dark .skill-card:hover {
 
 body.dark .greeting-text {
   color: #a1a1b5;
+}
+
+body.dark #timer {
+  background: rgba(25, 25, 40, 0.4);
+  color: #e4e4e7;
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
