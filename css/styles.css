@@ -362,6 +362,33 @@ body {
   font-weight: 500;
 }
 
+.project-card a {
+  margin-top: auto;
+  text-decoration: none;
+  font-weight: 500;
+  color: #7c3aed;
+  transition: 0.3s;
+}
+
+#github-projects {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+  margin-top: 30px;
+
+  width: 100%;
+  justify-content: center;   /* centers grid */
+}
+
+#github {
+  max-width: 900px;
+  margin: 0 auto;
+  margin-top: 60px;
+}
+
+.project-card a:hover {
+  text-decoration: underline;
+}
 .filter-btn:hover,
 .filter-btn.active {
   background: rgba(196, 171, 253, 0.2);
@@ -525,6 +552,8 @@ body.dark .footer p {
   body {
     padding-top: 170px;
   }
+
+   
 
   .theme-toggle {
     top: 16px;

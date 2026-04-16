@@ -187,3 +187,36 @@ if (greeting) {
 
   greeting.textContent = message;
 }
+
+async function loadGitHubRepos() {
+  const container = document.getElementById("github-projects");
+
+  try {
+    const response = await fetch("https://api.github.com/users/Fatimah-Alshehab/repos");
+    const repos = await response.json();
+
+    repos.slice(3, 7).forEach(repo => {
+      const card = document.createElement("div");
+      card.className = "glass-box project-card";
+
+      card.innerHTML = `
+      <h3>${repo.name}</h3>
+      <p>${repo.description || "No description available"}</p>
+
+      <div class="project-tags">
+        <span class="tag purple">${repo.language || "Code"}</span>
+        <span class="tag purple">GitHub</span>
+      </div>
+
+      <a href="${repo.html_url}" target="_blank">View Project</a>
+    `;
+
+      container.appendChild(card);
+    });
+
+  } catch (error) {
+    container.innerHTML = "<p>Failed to load GitHub projects.</p>";
+  }
+}
+
+loadGitHubRepos();
