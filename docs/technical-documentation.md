@@ -1,108 +1,123 @@
-# Technical Documentation
+# 📄 Technical Documentation
 
-## Overview
+## 📌 Overview
 
-This portfolio website was developed using HTML, CSS, and JavaScript.  
-The project follows a structured folder organization to maintain clarity and separation of concerns.
-
-The website was initially created in Assignment 1 and later enhanced in Assignment 2 by adding interactive and dynamic features.
+This portfolio website is a front-end web application built using HTML, CSS, and JavaScript.
+It showcases projects, skills, and contact information while demonstrating advanced functionality such as API integration, state management, and dynamic user interaction.
 
 ---
 
-## Technologies Used
+## 🧱 Project Structure
 
-- HTML5 – Structure of the website
-- CSS3 – Styling and responsive design
-- JavaScript (Vanilla JS) – Interactivity and dynamic behavior
-- Git & GitHub – Version control and deployment
-
----
-
-## Project Structure
-
-assignment-2/
-├── index.html  
-├── css/styles.css  
-├── js/script.js  
-├── assets/images/  
-├── docs/  
-
-The project separates styling, scripting, and assets into dedicated folders to improve maintainability.
+```
+202278660-fatimahalshehab-assignment3/
+├── index.html
+├── css/
+│   └── styles.css
+├── js/
+│   └── script.js
+├── assets/
+│   └── images/
+├── docs/
+│   ├── ai-usage-report.md
+│   └── technical-documentation.md
+└── README.md
+```
 
 ---
 
-## Key Features
+## ⚙️ Core Features Implementation
 
-### 1. Responsive Design
-- Layout adapts to desktop and mobile devices.
-- Flexbox and CSS Grid are used for layout structure.
-- Media queries adjust layout for smaller screens.
+### 1. 🎨 UI & Layout
 
-### 2. Dark/Light Mode
-- Implemented using a class toggle on the body element.
-- User preference is stored in localStorage.
-- Color themes are handled through conditional CSS.
-
-### 3. Scroll Animations
-- Implemented using the IntersectionObserver API.
-- Sections and project cards animate into view when scrolling.
-- Observer configuration prevents flickering effects.
-
-### 4. Active Navigation Highlight
-- The current visible section is detected using IntersectionObserver.
-- The corresponding navigation link receives an active class.
-
-### 5. Accessibility – Font Size Control
-- Root font size is modified dynamically using JavaScript.
-- rem units are used for scalable typography.
-- Buttons allow increasing and decreasing text size within limits.
-
-### 6. Dynamic Project Filtering (Assignment 2)
-- Projects are filtered based on selected categories (All, C#, Java, Design).
-- Implemented using data attributes and JavaScript event listeners.
-- Updates the displayed content dynamically without reloading the page.
-
-### 7. Time-Based Greeting (Assignment 2)
-- Displays a greeting message based on the current time of day.
-- Uses JavaScript Date object to determine morning, afternoon, or evening.
-
-### 8. Form Validation and User Feedback (Assignment 2)
-- Validates user input in the contact form.
-- Checks for empty fields and valid email format.
-- Displays error and success messages dynamically.
-
-### 9. Hover Animations (Assignment 2)
-- Project and skill cards include hover effects.
-- Uses CSS transitions for smooth scaling and shadow effects.
-- Enhances interactivity and user experience.
-
-### 10. Glass UI Design
-- Achieved using backdrop-filter and semi-transparent backgrounds.
-- Soft gradients and subtle shadows enhance visual depth.
+* Built using semantic HTML structure
+* Styled with CSS using a glassmorphism design
+* Responsive layout using CSS Grid and media queries
 
 ---
 
-## Performance Considerations
+### 2. 🔗 API Integration
 
-- Minimal external dependencies.
-- No heavy frameworks used.
-- Optimized images stored locally.
-- Efficient event handling using IntersectionObserver.
+* GitHub API is used to fetch repositories dynamically
+* Implemented using `fetch()` with async/await
+* Displays repository name, description, and link
 
----
+```javascript
+fetch("https://api.github.com/users/Fatimah-Alshehab/repos")
+```
 
-## Browser Compatibility
-
-The website was tested on:
-- Google Chrome
-- Microsoft Edge
-
-It is responsive and functions across modern browsers.
+* Includes basic error handling if the request fails
 
 ---
 
-## Future Improvements
+### 3. 🧠 Complex Logic
 
-- Add backend support for sending real emails from the contact form.
-- Improve animation timing and transitions.
-- Enhance accessibility features further.
+#### Project Filtering
+
+* Filters projects based on selected category
+* Uses `data-category` attributes
+
+#### Visitor Timer
+
+* Tracks time spent on the website
+* Uses `setInterval()` to update every second
+
+#### Form Validation
+
+* Checks if fields are filled
+* Validates email format using regex
+* Displays dynamic feedback messages
+
+---
+
+### 4. 🧠 State Management
+
+* Dark mode state is stored using `localStorage`
+* Font size adjustments persist during interaction
+* UI updates dynamically based on user actions
+
+---
+
+### 5. 🎯 DOM Manipulation
+
+* Elements are selected using `querySelector` and `getElementById`
+* Dynamic content (GitHub projects) is created using `createElement()`
+* Event listeners are used for interaction handling
+
+---
+
+### 6. ⚡ Performance Optimization
+
+* Images use lazy loading to improve performance
+* Efficient event handling and minimal DOM updates
+* Clean and organized CSS to reduce redundancy
+
+---
+
+## 🔄 User Interaction Flow
+
+1. User opens the website
+2. UI elements load with animations
+3. User can:
+
+   * Toggle dark/light mode
+   * Filter projects
+   * View GitHub repositories
+   * Submit contact form
+4. Timer starts automatically and updates continuously
+
+---
+
+## 🛠️ Technologies Used
+
+* HTML5
+* CSS3
+* JavaScript (ES6)
+* GitHub API
+
+---
+
+## 📌 Summary
+
+This project demonstrates the integration of modern web development concepts including dynamic data fetching, state management, and user interaction.
+The application is designed to be clean, responsive, and efficient while maintaining simplicity and clarity.
