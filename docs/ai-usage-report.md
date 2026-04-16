@@ -1,77 +1,54 @@
-# AI Usage Report
+# 🤖 AI Usage Report
 
-## Tools Used
+## 📌 Tools Used & Use Cases
 
-The following AI tools were used during the development of this project:
+### ChatGPT
 
-- ChatGPT – Used for debugging, improving code structure, refining design decisions, and assisting with interactive features.
-
----
-
-## How AI Was Used
-
-AI was used as a supportive tool throughout the development process. It assisted in:
-
-### Assignment 1:
-- Structuring JavaScript logic for scroll animations and section highlighting.
-- Debugging layout and responsiveness issues.
-- Improving CSS styling decisions, including glass effects and dark mode adjustments.
-- Refining project descriptions for the portfolio section.
-- Understanding how to implement accessibility features such as font size controls.
-- Explaining technical concepts when needed.
-
-### Assignment 2:
-- Implementing dynamic features such as project filtering based on categories.
-- Creating a time-based greeting message using JavaScript.
-- Adding form validation for the contact form (checking empty fields and email format).
-- Improving hover animations for project and skill cards.
-- Debugging issues such as incorrect email validation regex.
-
-AI was not used to automatically generate the entire project. Instead, it was used as a guide to better understand problems and improve implementation.
+* Assisted in debugging JavaScript issues
+* Helped implement GitHub API integration
+* Suggested improvements for UI consistency and layout
+* Provided guidance on structuring code and adding features (e.g., timer, filtering)
+* Assisted in writing documentation such as README and reports
 
 ---
 
-## Benefits
+## ⚖️ Benefits & Challenges
 
-Using AI helped:
+### Benefits
 
-- Speed up debugging and troubleshooting.
-- Improve UI/UX design decisions.
-- Understand how to properly structure JavaScript using IntersectionObserver.
-- Learn better CSS practices (rem units, responsive layout, glass effects).
-- Implement dynamic features such as filtering and validation.
-- Improve clarity in documentation writing.
+* Faster problem-solving and debugging
+* Clear explanations of JavaScript concepts
+* Helped improve code structure and readability
+* Assisted in implementing features that would otherwise take longer
 
----
+### Challenges
 
-## Challenges
-
-Some AI suggestions required adjustments because:
-
-- Certain animations caused layout issues.
-- Multiple DOMContentLoaded events needed restructuring.
-- Styling suggestions needed refinement to match the design theme.
-- Some JavaScript logic (such as regex for email validation) required correction.
-
-This required reviewing and modifying the code to ensure correctness.
+* Some suggestions required adjustment to fit the project structure
+* Needed to carefully review outputs to ensure correctness
+* Had to modify generated code to match assignment requirements
 
 ---
 
-## Learning Outcomes
+## 🎓 Learning Outcomes
 
-Through using AI as a support tool, I learned:
-
-- How to structure scroll-based animations properly.
-- The importance of using rem units for scalable font sizes.
-- How to implement dark/light mode with localStorage.
-- How to organize JavaScript logic cleanly inside a single DOMContentLoaded event.
-- How to implement dynamic features such as filtering and form validation.
-- How to refine UI details to achieve a consistent design system.
+* Improved understanding of API integration using `fetch()`
+* Learned how to manage state (e.g., dark mode and timer)
+* Strengthened skills in DOM manipulation and event handling
+* Gained experience in structuring clean and maintainable JavaScript code
+* Learned how to effectively use AI tools as a support tool rather than relying on them completely
 
 ---
 
-## Responsible Use
+## 🛡️ Responsible Use & Modifications
 
-All AI-generated suggestions were reviewed and tested.  
-Code was modified, reorganized, and adjusted to ensure understanding and originality.  
-The final implementation reflects my understanding of the logic and structure.
+* All AI-generated suggestions were reviewed and tested before use
+* Code was modified to fit the project requirements and personal coding style
+* Ensured that all implemented features were fully understood
+* Avoided copying code blindly and adapted solutions when necessary
+
+---
+
+## 📌 Summary
+
+AI tools were used as a supportive resource to enhance productivity, improve code quality, and assist in problem-solving.
+All final implementations were reviewed, modified, and understood to ensure originality and academic integrity.
