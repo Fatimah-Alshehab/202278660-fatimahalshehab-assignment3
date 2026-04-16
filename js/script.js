@@ -218,5 +218,15 @@ async function loadGitHubRepos() {
     container.innerHTML = "<p>Failed to load GitHub projects.</p>";
   }
 }
-
 loadGitHubRepos();
+
+let seconds = 0;
+
+setInterval(() => {
+  seconds++;
+
+  const timer = document.getElementById("timer");
+  if (timer) {
+    timer.textContent = `⏱ You’ve been here for ${seconds}s`;
+  }
+}, 1000);
